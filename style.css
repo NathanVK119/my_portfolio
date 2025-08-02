@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*View Certificate*/
+#view_cert {
+    cursor: pointer;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+#view_cert:hover {
+    color: #0056b3;
+}
+
+/* Custom Unique Gradients */
+/* Light Mode Hero Gradient - Cosmic Fusion */
+.light .hero-gradient {
+    background: linear-gradient(135deg, 
+        #3a7bd5 0%, 
+        #3a6073 25%, 
+        #16222a 50%, 
+        #4568dc 75%, 
+        #00a1ff 100%);
+    background-size: 300% 300%;
+    animation: gradientShift 15s ease infinite;
+}
+
+/* Dark Mode Hero Gradient - Midnight Cosmos */
+.dark .hero-gradient {
+    background: linear-gradient(135deg, 
+        #0f2027 0%, 
+        #203a43 25%, 
+        #1a2980 50%, 
+        #26d0ce 75%, 
+        #243b55 100%);
+    background-size: 300% 300%;
+    animation: gradientShift 15s ease infinite;
+}
+
+/* Light Mode Button Gradient - Crystal Blue */
+.light .btn-gradient {
+    background: linear-gradient(135deg, 
+        #4338CA 0%, 
+        #5E60CE 50%, 
+        #6366F1 100%);
+    transition: all 0.3s ease;
+    background-size: 200% 200%;
+}
+
+.light .btn-gradient:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Button Gradient - Deep Ocean */
+.dark .btn-gradient {
+    background: linear-gradient(135deg, 
+        #3730A3 0%, 
+        #4C51BF 50%, 
+        #4F46E5 100%);
+    transition: all 0.3s ease;
+    background-size: 200% 200%;
+}
+
+.dark .btn-gradient:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Light Mode Project Gradients - Unique for each project */
+.light .project-gradient-1 {
+    background: linear-gradient(135deg, #0369A1 0%, #3B82F6 50%, #4338CA 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.light .project-gradient-2 {
+    background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 50%, #6366F1 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.light .project-gradient-3 {
+    background: linear-gradient(135deg, #0891B2 0%, #06B6D4 50%, #4F46E5 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.light .project-gradient-4 {
+    background: linear-gradient(135deg, #0284C7 0%, #0EA5E9 50%, #7C3AED 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.light .project-gradient-5 {
+    background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 50%, #4F46E5 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.light .project-gradient-6 {
+    background: linear-gradient(135deg, #075985 0%, #0284C7 50%, #6D28D9 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+/* Dark Mode Project Gradients - Unique for each project */
+.dark .project-gradient-1 {
+    background: linear-gradient(135deg, #075985 0%, #1E40AF 50%, #3730A3 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.dark .project-gradient-2 {
+    background: linear-gradient(135deg, #0C4A6E 0%, #1E3A8A 50%, #4338CA 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.dark .project-gradient-3 {
+    background: linear-gradient(135deg, #155E75 0%, #1E40AF 50%, #4338CA 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.dark .project-gradient-4 {
+    background: linear-gradient(135deg, #0C4A6E 0%, #1E3A8A 50%, #5B21B6 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.dark .project-gradient-5 {
+    background: linear-gradient(135deg, #0C4A6E 0%, #1E40AF 50%, #4338CA 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+.dark .project-gradient-6 {
+    background: linear-gradient(135deg, #0C4A6E 0%, #1E3A8A 50%, #5B21B6 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+/* Light Mode Skill Bar */
+.light .skill-bar {
+    background: linear-gradient(90deg, #4338CA 0%, #6366F1 50%, #818CF8 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 4s ease infinite;
+}
+
+/* Dark Mode Skill Bar */
+.dark .skill-bar {
+    background: linear-gradient(90deg, #3730A3 0%, #4F46E5 50%, #6366F1 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 4s ease infinite;
+}
+
+/* Footer Gradient */
+.footer-gradient {
+    background: linear-gradient(135deg, 
+        #0f172a 0%, 
+        #1e293b 50%, 
+        #334155 100%);
+    background-size: 200% 200%;
+    animation: subtleShift 8s ease infinite;
+}
+
+/* Gradient Animations */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes subtleShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Prism Gradient Text */
+.prism-text {
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: textShine 4s linear infinite;
+}
+
+.dark .prism-text {
+    background: linear-gradient(to right, #4facfe, #00f2fe, #a6ffcb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: textShine 4s linear infinite;
+}
+
+@keyframes textShine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-pill {
+    transition: all 0.3s ease;
+}
+
+.skill-pill:hover {
+    transform: scale(1.05);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #6366F1;
+    border: 3px solid #EEF2FF;
+    transition: all 0.3s ease;
+}
+
+.dark .timeline-item::before {
+    background: #818CF8;
+    border: 3px solid #1E1B4B;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #D1D5DB;
+    transition: background-color 0.3s ease;
+}
+
+.dark .timeline::before {
+    background: #4B5563;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.project-btn {
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Theme Toggle Animation */
+.theme-toggle {
+    transition: transform 0.5s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(45deg);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Staggered Fade In for Skills */
+.skill-pill:nth-child(1) { animation-delay: 0.1s; }
+.skill-pill:nth-child(2) { animation-delay: 0.2s; }
+.skill-pill:nth-child(3) { animation-delay: 0.3s; }
+.skill-pill:nth-child(4) { animation-delay: 0.4s; }
+.skill-pill:nth-child(5) { animation-delay: 0.5s; }
+.skill-pill:nth-child(6) { animation-delay: 0.6s; }
+.skill-pill:nth-child(7) { animation-delay: 0.7s; }
+.skill-pill:nth-child(8) { animation-delay: 0.8s; }
+
+/* Glow Effect */
+.glow {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.glow:hover {
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.7);
+}
+
+.dark .glow {
+    box-shadow: 0 0 15px rgba(129, 140, 248, 0.5);
+}
+
+.dark .glow:hover {
+    box-shadow: 0 0 25px rgba(129, 140, 248, 0.7);
+}
+
+/* Ensure hero section takes full viewport height on all devices */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Shimmer effect for profile image border */
+.shimmer-border {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-border::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    animation: shimmer 4s infinite;
+}
+
+.dark .shimmer-border::after {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+@keyframes shimmer {
+    0% {
+        transform: rotate(30deg) translateX(-100%);
+    }
+    100% {
+        transform: rotate(30deg) translateX(100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item::before {
+        left: -30px;
+    }
+    .timeline::before {
+        left: 7px;
+    }
+}

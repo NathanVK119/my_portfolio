@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NathanVK - PORTFOLIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            200: '#C7D2FE',
+                            300: '#A5B4FC',
+                            400: '#818CF8',
+                            500: '#6366F1',
+                            600: '#4F46E5',
+                            700: '#4338CA',
+                            800: '#3730A3',
+                            900: '#312E81',
+                        },
+                        secondary: {
+                            50: '#F0F9FF',
+                            100: '#E0F2FE',
+                            200: '#BAE6FD',
+                            300: '#7DD3FC',
+                            400: '#38BDF8',
+                            500: '#0EA5E9',
+                            600: '#0284C7',
+                            700: '#0369A1',
+                            800: '#075985',
+                            900: '#0C4A6E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto px-4 md:px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold text-primary-600 dark:text-primary-400">Nathan<span class="text-gray-800 dark:text-gray-200">VK</span></a>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 text-primary-600 dark:text-primary-400 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-300">
+                        <i class="fas fa-sun text-lg dark:hidden"></i>
+                        <i class="fas fa-moon text-lg hidden dark:block"></i>
+                    </button>
+                    
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 focus:outline-none">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-primary-600 dark:text-primary-400 font-medium hover:text-primary-800 dark:hover:text-primary-300 transition">Home</a>
+                    <a href="#about" class="text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400 transition">About</a>
+                    <a href="#skills" class="text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400 transition">Skills</a>
+                    <a href="#experience" class="text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400 transition">Experience</a>
+                    <a href="#projects" class="text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400 transition">Projects</a>
+                    <a href="#contact" class="text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400 transition">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-2">
+                <a href="#home" class="block py-2 text-primary-600 dark:text-primary-400 font-medium">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400">About</a>
+                <a href="#skills" class="block py-2 text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400">Skills</a>
+                <a href="#experience" class="block py-2 text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400">Experience</a>
+                <a href="#projects" class="block py-2 text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400">Projects</a>
+                <a href="#contact" class="block py-2 text-gray-600 dark:text-gray-300 font-medium hover:text-primary-600 dark:hover:text-primary-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- My Hero Section -->
+    <section id="home" class="hero-section hero-gradient text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute bottom-0 left-0 opacity-10">
+                <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,202.7C672,203,768,181,864,181.3C960,181,1056,203,1152,197.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Nathaniel Sales Duldulao</h1>
+                    <h2 class="text-2xl md:text-3xl font-medium mb-6">QA Automation</h2>
+                    <p class="text-lg md:text-xl mb-8 text-blue-100">Fresh IT graduate with web development experience and a solid understanding of the software development life cycle. Passionate about learning and growing in QA Automation to build reliable software through careful testing and automation.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="btn-gradient text-white px-6 py-3 rounded-lg font-medium shadow-lg">Hire Me</a>
+                        <a href="#projects" class="btn-outline border-2 border-white text-white px-6 py-3 rounded-lg font-medium">Download Resume</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full shimmer-border bg-blue-200 dark:bg-blue-900 border-8 border-blue-100 dark:border-blue-800 overflow-hidden shadow-xl floating glow">
+                        <img src="/images/picture.jpg" alt="Portrait of Nathaniel Sales Duldulao" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+                <a href="#about" class="inline-flex flex-col items-center text-current no-underline"><span class="text-white text-sm mb-2">More About Me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="prism-text">Me</span></h2>
+                <div class="w-20 h-1 bg-primary-600 dark:bg-primary-500 mx-auto"></div>
+            </div>
+            
+            <!-- About Content (My Story) -->
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 fade-in">
+                    <p class="text-lg mb-4">I’m a fresh graduate with a degree in BS Information Technology. I have experience in web development as a freelancer, helping classmates and students build websites and connect them with databases. I enjoy exploring and researching different paths to find what truly fits me. I’ve tried web development, networking, even cybersecurity, and gained basic skills in each of them. Eventually, I discovered manual QA, and it caught my interest through bug bounty topics in cybersecurity. But what made me more curious was how bugs exist in the systems I develop myself.</p>
+                    <p class="text-lg mb-4">I’ve always been detail-oriented, especially when it comes to UX design. I love checking websites, analyzing how they work, and suggesting better ways to improve user experience. That’s when I realized that I enjoy testing and analyzing more than just coding. I wanted a path where I could still apply my programming knowledge, and knowing the web development cycle really helps. Then I found QA Automation and it matched everything I was looking for: analysis, testing, system logic, and even a bit of that “pen tester mindset” from cybersecurity. I also believe in using AI as a helpful tool to make testing even better.</p>
+                    <p class="text-lg">Out of all the paths I explored, QA Automation is the one I’m most passionate about. I’m ready to grow, keep learning continuously, be flexible, and fully adapt to the world of QA and the tech industry as a whole.</p>
+                </div>
+                
+                <!-- Personal Information -->
+                <div class="md:w-1/2 fade-in" style="animation-delay: 0.2s;">
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-md h-full hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm">Full Name</p>
+                                    <p class="font-medium">Nathaniel Sales Duldulao</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm">Email</p>
+                                    <p class="font-medium">nathanielsalesduldulao119@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm">Location</p>
+                                    <p class="font-medium">Occidental Mindoro, Philippines</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm">Education</p>
+                                    <p class="font-medium">B.S. in Information Technology</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">Occidental Mindoro State College, 2025</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 dark:text-gray-400 text-sm">Experience</p>
+                                    <p class="font-medium">Web Development (Freelancer)</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">2023 - 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- My Socials -->
+                        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-600">
+                            <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/nathaniel-duldulao-446474372/" target="_blank" class="w-10 h-10 bg-[#0077B5] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300 pulse">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Nathan-VK9" target="_blank" class="w-10 h-10 bg-[#333] dark:bg-[#222] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300 pulse" style="animation-delay: 0.2s;">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.facebook.com/nathaniel.sales.duldulao.2024" target="_blank" class="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300 pulse" style="animation-delay: 0.4s;">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="mailto:nathanielsalesduldulao119@gmail.com" target="_blank" class="w-10 h-10 bg-[#EA4335] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300 pulse" style="animation-delay: 0.6s;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Technical & <span class="prism-text">Soft Skills</span></h2>
+                <div class="w-20 h-1 bg-primary-600 dark:bg-primary-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Automation Tools -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4">
+                            <i class="fas fa-tools text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Automation Tools</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Testing Tools: Cypress, Postman & Newman</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Programming Languages: JavaScript, Java and Python</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">JIRA</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in" style="animation-delay: 0.3s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4">
+                            <i class="fas fa-laptop-code text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Web Development</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Programming Languages: HTML, CSS, JavaScript & PHP</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Frameworks: TailwindCSS, Bootstrap & React  (Basic)</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Database: MySQL (Basic)</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4">
+                            <i class="fas fa-wrench text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Tools & Others</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Tools: VSCode, XAMPP & AI Tools</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Git & GitHub (Basic)</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">CI/CD (Basic)</span>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in" style="animation-delay: 0.4s;">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4">
+                            <i class="fas fa-users-cog text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Soft Skills</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Written Communication</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Analytical Thinking</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Problem Solving</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Critical Thinking</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Attention to Detail</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Adaptability</span>
+                    </div>
+                </div>
+
+                <!-- Currently Learning & Used -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4">
+                            <i class="fas fa-book-open text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Currently Learning & Used</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Testing Tools: Cypress, Postman & Newman</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">JIRA</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Git & GitHub</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">CI/CD</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">AI Tools: ChatGPT, Cursor AI & Codeium</span>
+                    </div>
+                </div>
+
+                <!-- Target To Learn -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4">
+                            <i class="fas fa-bullseye text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Target To Learn</h3>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">Testing Tools: Playwright and Selenium</span>
+                        <span class="skill-pill bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-4 py-2 rounded-full font-medium transition-all duration-300 fade-in">API Testing: REST Assured</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skill Bars -->
+            <div class="mt-12 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 fade-in" style="animation-delay: 0.5s;">
+                <h3 class="text-xl font-semibold mb-6">Proficiency Levels</h3>
+                
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Manual Testing</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 80%; transition: width 1.5s ease-out;"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Test Case Design</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 75%; transition: width 1.5s ease-out; transition-delay: 0.2s;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Bug Reporting</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 75%; transition: width 1.5s ease-out; transition-delay: 0.8s;"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Test Automation</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 70%; transition: width 1.5s ease-out; transition-delay: 0.4s;"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">API Testing</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 60%; transition: width 1.5s ease-out; transition-delay: 0.6s;"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Git & GitHub</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 65%; transition: width 1.5s ease-out; transition-delay: 0.8s;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">CI / CD</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 50%; transition: width 1.5s ease-out; transition-delay: 0.8s;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Web Development</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 80%; transition: width 1.5s ease-out; transition-delay: 0.8s;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">AI Tools</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-full skill-bar rounded-full" style="width: 90%; transition: width 1.5s ease-out; transition-delay: 0.8s;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Experience & <span class="prism-text">Education</span></h2>
+                <div class="w-20 h-1 bg-primary-600 dark:bg-primary-500 mx-auto"></div>
+            </div>
+            
+            <div class="relative timeline pl-10 md:pl-12">
+                
+                <!-- Experience as Intern -->
+                <div class="timeline-item relative mb-12 pb-6 fade-in" style="animation-delay: 0.2s;">
+                    <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-primary-600 dark:text-primary-400">On-the-Job Training – Web Developer / QA Tester</h3>
+                            <div class="flex items-center mt-2 md:mt-0">
+                                <span class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">February 19, 2025 - June 16, 2025</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-medium mb-4">Poblacion Elementary School</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>I suggested and built a School Portal System during my OJT, which included:</li>
+                            <li><strong>A File Management System:</strong> Internal platform for teachers to upload, access, and organize school files.</li>
+                            <li><strong>A Student Registration System:</strong> Digital records management for student information and enrollment.</li>
+                            <li><strong>Tools I Used:</strong> HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL, with the help of AI tools on some backend tasks. Still, all the core ideas and logic came from me.</li>
+                            <li><strong>QA Testing:</strong> Added automated testing using Cypress, and practiced writing test cases, doing manual testing, and reporting bugs.</li>
+                            <li>The system is now being used by the school. I completed 486 hours of OJT and received a Certificate of Completion.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience as Freelancer -->
+                <div class="timeline-item relative mb-12 pb-6 fade-in">
+                    <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-primary-600 dark:text-primary-400"> Web Development Projects (Freelance / Sideline)</h3>
+                            <div class="flex items-center mt-2 md:mt-0">
+                                <span class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">2023 - 2025</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-medium mb-4">Self-Employed</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><strong>Freelance Project(Sideline):</strong> Accepted small website projects as a sideline during my time in college.</li>
+                            <li><strong>CRUD Websites:</strong> Built a simple CRUD websites using HTML, CSS, JavaScript, PHP, and MySQL, focusing on clean design and working database connections.</li>
+                            <li>Although I didn’t have many clients, each project helped me improve and gain real experience.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline-item relative mb-12 pb-6 fade-in">
+                    <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-primary-600 dark:text-primary-400">Bachelor of Science in Information Technology (BSIT)</h3>
+                            <div class="flex items-center mt-2 md:mt-0">
+                                <span class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">2021 - 2025</span>
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-medium mb-4">Occidental Mindoro State College (OMSC)</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>Learned a lot through school and self-study, especially in web development, QA automation, basic networking, and cybersecurity.</li>
+                            <li><strong>Capstone Project:</strong> “MediTrack: Medical Record Management System” – San Sebastian District Hospital</li>
+                            <li>A system designed to help hospital staff find patient records faster and easier.</li>
+                            <li>Used QR code integration to speed up access and reduce manual work.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold mb-6 text-center fade-in" style="animation-delay: 0.5s;">Certifications</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md border-t-4 border-primary-600 dark:border-primary-500 hover:shadow-lg transition-shadow duration-300 fade-in" style="animation-delay: 0.6s;">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold">Linux CLI Basic</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-2">Cybrary (1 hour course)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Issued: September 28, 2024</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400" id="view_cert"><a href="/images/linux_cert.jpg" target="_blank"><i>View Certificate</i></a></p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md border-t-4 border-primary-600 dark:border-primary-500 hover:shadow-lg transition-shadow duration-300 fade-in" style="animation-delay: 0.7s;">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold">On-the-Job Training Completion</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-2">Poblacion Elementary School - DepEd</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Issued: June 16, 2025</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400" id="view_cert"><a href="/images/intern_cert.jpg" target="_blank"><i>View Certificate</i></a></p>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-md border-t-4 border-primary-600 dark:border-primary-500 hover:shadow-lg transition-shadow duration-300 fade-in" style="animation-delay: 0.8s;">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-3">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold">Introduction to Cypress</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-2">Test Automation University (Instructor: Filip Hric)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Issued: July 15, 2025</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400" id="view_cert"><a href="/images/cypress_cert.jpg" target="_blank"><i>View Certificate</i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured <span class="prism-text">Projects</span></h2>
+                <div class="w-20 h-1 bg-primary-600 dark:bg-primary-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition duration-300 fade-in">
+                    <div class="h-48 project-gradient-1 flex items-center justify-center relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">University Management System Test Framework</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Developed a comprehensive test automation framework for a university management system as part of my senior project.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Selenium</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Java</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">TestNG</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Maven</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button class="project-details-btn project-btn flex-1 bg-primary-600 dark:bg-primary-700 text-white py-2 rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors duration-300" data-project="project1">View Details</button>
+                            <a href="https://github.com/johndoe/university-test-framework" target="_blank" class="project-btn flex-1 bg-gray-800 dark:bg-gray-700 text-white py-2 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-300 text-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://demo-university-test.example.com" target="_blank" class="project-btn flex-1 bg-green-600 dark:bg-green-700 text-white py-2 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 text-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition duration-300 fade-in" style="animation-delay: 0.2s;">
+                    <div class="h-48 project-gradient-2 flex items-center justify-center relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Website with Cypress Tests</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Created a full-stack e-commerce website with comprehensive automated tests using Cypress for the frontend.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Cypress</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button class="project-details-btn project-btn flex-1 bg-primary-600 dark:bg-primary-700 text-white py-2 rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors duration-300" data-project="project2">View Details</button>
+                            <a href="https://github.com/johndoe/ecommerce-cypress" target="_blank" class="project-btn flex-1 bg-gray-800 dark:bg-gray-700 text-white py-2 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-300 text-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://demo-ecommerce.example.com" target="_blank" class="project-btn flex-1 bg-green-600 dark:bg-green-700 text-white py-2 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 text-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition duration-300 fade-in" style="animation-delay: 0.3s;">
+                    <div class="h-48 project-gradient-3 flex items-center justify-center relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                        </svg>
+                        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">API Testing Framework</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Designed and implemented an API testing framework using Postman and Newman for a RESTful service.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Postman</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Newman</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Jenkins</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button class="project-details-btn project-btn flex-1 bg-primary-600 dark:bg-primary-700 text-white py-2 rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors duration-300" data-project="project3">View Details</button>
+                            <a href="https://github.com/johndoe/api-testing-framework" target="_blank" class="project-btn flex-1 bg-gray-800 dark:bg-gray-700 text-white py-2 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-300 text-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://demo-api-testing.example.com" target="_blank" class="project-btn flex-1 bg-green-600 dark:bg-green-700 text-white py-2 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 text-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition duration-300 fade-in" style="animation-delay: 0.4s;">
+                    <div class="h-48 project-gradient-4 flex items-center justify-center relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Student Collaboration App Testing</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Conducted manual and automated testing for a student collaboration mobile application using Appium.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Appium</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Java</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">TestNG</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Android</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button class="project-details-btn project-btn flex-1 bg-primary-600 dark:bg-primary-700 text-white py-2 rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors duration-300" data-project="project4">View Details</button>
+                            <a href="https://github.com/johndoe/student-app-testing" target="_blank" class="project-btn flex-1 bg-gray-800 dark:bg-gray-700 text-white py-2 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-300 text-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://demo-student-app.example.com" target="_blank" class="project-btn flex-1 bg-green-600 dark:bg-green-700 text-white py-2 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 text-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition duration-300 fade-in" style="animation-delay: 0.5s;">
+                    <div class="h-48 project-gradient-5 flex items-center justify-center relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Test Case Management System</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Developed a web-based test case management system for organizing and tracking test cases and results.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Express</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button class="project-details-btn project-btn flex-1 bg-primary-600 dark:bg-primary-700 text-white py-2 rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors duration-300" data-project="project5">View Details</button>
+                            <a href="https://github.com/johndoe/test-case-management" target="_blank" class="project-btn flex-1 bg-gray-800 dark:bg-gray-700 text-white py-2 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-300 text-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://demo-test-management.example.com" target="_blank" class="project-btn flex-1 bg-green-600 dark:bg-green-700 text-white py-2 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 text-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition duration-300 fade-in" style="animation-delay: 0.6s;">
+                    <div class="h-48 project-gradient-6 flex items-center justify-center relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Security Testing Project</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Implemented basic security testing for a web application to identify common vulnerabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">OWASP ZAP</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Selenium</span>
+                            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium px-2.5 py-0.5 rounded">Jenkins</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button class="project-details-btn project-btn flex-1 bg-primary-600 dark:bg-primary-700 text-white py-2 rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors duration-300" data-project="project6">View Details</button>
+                            <a href="https://github.com/johndoe/security-testing-project" target="_blank" class="project-btn flex-1 bg-gray-800 dark:bg-gray-700 text-white py-2 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-300 text-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://demo-security-testing.example.com" target="_blank" class="project-btn flex-1 bg-green-600 dark:bg-green-700 text-white py-2 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 text-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="prism-text">Touch</span></h2>
+                <div class="w-20 h-1 bg-primary-600 dark:bg-primary-500 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 fade-in">
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-md h-full hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4 shrink-0">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium mb-1">Email</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">nathanielsalesduldulao119@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4 shrink-0">
+                                    <i class="fas fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium mb-1">Phone</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">09260656126</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4 shrink-0">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium mb-1">Location</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">Sablayan,Occidental Mindoro, Philippines</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 mr-4 shrink-0">
+                                    <i class="fas fa-globe text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium mb-1">Social Profiles</h4>
+                                    <div class="flex space-x-4 mt-2">
+                                        <a href="https://www.linkedin.com/in/nathaniel-duldulao-446474372/" target="_blank" class="w-10 h-10 bg-[#0077B5] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="https://github.com/Nathan-VK9" target="_blank" class="w-10 h-10 bg-[#333] dark:bg-[#222] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/nathaniel.sales.duldulao.2024" target="_blank" class="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a href="mailto:nathanielsalesduldulao119@gmail.com" target="_blank" class="w-10 h-10 bg-[#EA4335] rounded-full flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-300">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 fade-in" style="animation-delay: 0.3s;">
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                        
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 dark:focus:ring-primary-500 focus:border-primary-600 dark:focus:border-primary-500 outline-none transition-colors duration-300 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100" placeholder="Your Name">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 dark:focus:ring-primary-500 focus:border-primary-600 dark:focus:border-primary-500 outline-none transition-colors duration-300 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100" placeholder="Your Email">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 dark:focus:ring-primary-500 focus:border-primary-600 dark:focus:border-primary-500 outline-none transition-colors duration-300 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100" placeholder="Subject">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 dark:focus:ring-primary-500 focus:border-primary-600 dark:focus:border-primary-500 outline-none transition-colors duration-300 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100" placeholder="Your Message"></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="w-full btn-gradient text-white py-3 rounded-lg font-medium">Send Message</button>
+                            </div>
+                        </form>
+                        
+                        <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-gradient text-white py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Nathan<span class="text-primary-400">VK</span></h2>
+                    <p class="mt-2 text-gray-400">QA Automation</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://www.linkedin.com/in/nathaniel-duldulao-446474372/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Nathan-VK9" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/nathaniel.sales.duldulao.2024" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="mailto:nathanielsalesduldulao119@gmail.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">&copy; 2025 NathanVK. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white dark:bg-gray-800 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto mx-4 transition-transform duration-300 transform scale-95 opacity-0" id="modal-container">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-2xl font-bold text-primary-600 dark:text-primary-400"></h3>
+                    <button id="close-modal" class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 focus:outline-none">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-gradient-to-r from-primary-600 to-primary-800 dark:from-primary-700 dark:to-primary-900 text-white rounded-full flex items-center justify-center shadow-lg hover:from-primary-700 hover:to-primary-900 dark:hover:from-primary-600 dark:hover:to-primary-800 transition-all duration-300 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
