@@ -1,141 +1,68 @@
  // Project Details
         const projectDetails = {
             project1: {
-                title: "University Management System Test Framework",
-                description: "Developed a comprehensive test automation framework for a university management system as part of my senior project. The framework enabled automated testing of critical functions including student registration, course management, grade tracking, and administrative tasks.",
+                title: "Local Web-Based School Portal for Poblacion Elementary School",
+                description: "This project was a requirement for my On-the-Job Training (OJT) from February 19, 2025, to June 16, 2025, completing a total of 486 hours. I was assigned to Poblacion Elementary School, where I proposed and developed a local web-based School Portal System. The system was built to provide a more organized and accessible way for the school to manage student data and teaching resources. It consists of two main modules:<br>1. Student Registration Module – This module stores the student’s complete information, including section, year level, adviser, and enrollment status. It features a search and filtering function for easier management. This module was suggested and is now handled by the Administrative Officer II, Mr. Dexter T. Sales.<br>2. Data Management Module – This was requested by the school principal, Mrs. Maria Reishelle Dueñas. It functions like a simplified Google Drive or file manager for teachers, solving the issue of missing or disorganized files from DepEd's online system. Since it is locally hosted, uploading and retrieving files is much faster and does not require internet, only a connection to the same Wi-Fi network within the school.",
                 challenges: [
-                    "Creating a maintainable and scalable test framework architecture",
-                    "Handling dynamic content and AJAX-based page updates",
-                    "Managing test data across different test environments",
-                    "Implementing proper reporting mechanisms for test results"
+                    "I was the sole developer of this project, which meant I had to handle everything, from backend to frontend, design, database, and even testing.",
+                    "I was not very experienced in backend development and full system setup.",
+                    "Due to my limited time and hours, I was not able to implement a role-based access system for admin and teachers.",
+                    "Designing the system for responsiveness (mobile/tablet) was not prioritized, so it only performs well on laptops/desktops."
                 ],
                 solutions: [
-                    "Implemented Page Object Model design pattern for better maintainability",
-                    "Created custom wait strategies to handle dynamic content",
-                    "Developed a test data management system using database integration",
-                    "Integrated ExtentReports for comprehensive test reporting"
+                    "I utilized AI tools like ChatGPT, Cursor AI, and Codeium to improve productivity, especially in the backend part where I had less experience. These tools helped me generate and fix code faster and also improve logic.",
+                    "I created a BAT script file that runs the local server (XAMPP) and opens the system automatically, so the admin no longer needs to manually launch it through VSCode or command line. The system acts like a web app with a shortcut icon on the server laptop/PC.",
+                    "For network setup, I used basic networking knowledge, ensuring that client laptops could access the system using the server’s IP address (e.g., http://192.168.x.x/POBLACION) as long as they are connected to the same Wi-Fi.",
                 ],
-                technologies: ["Selenium WebDriver", "Java", "TestNG", "Maven", "Jenkins", "ExtentReports", "MySQL"],
+                technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL", "Cypress", "VSCode","XAMPP", "AI Tools", "BAT Script"],
                 results: [
-                    "Achieved 85% test automation coverage for critical system functions",
-                    "Reduced manual testing effort by 60%",
-                    "Identified and fixed 20+ critical issues before system deployment",
-                    "Received an A grade and recognition from the university's IT department"
+                    "The system was successfully deployed and installed on the school’s server Laptop/PC.",
+                    "Teachers now have a reliable file storage system, and student registration has become more organized and easier to manage.",
+                    "The project was well-received by both the principal and the administrative officer, and it is now actively being used in the school.",
+                    "It served as a real-world contribution during my OJT, which made my experience meaningful."
+                ],
+                additionals: [
+                    "Timeline: February 19, 2025 – June 16, 2025",
+                    "Location: Poblacion Elementary School",
+                    "System Type: Local Web-Based School Portal",
+                    "Modules: Student Registration and File Management",
+                    "Hosting: Local server via XAMPP",
+                    "Access: IP-based access through the same Wi-Fi network",
+                    "Reference:<br>Mrs. Maria Reishelle Dueñas<br>Principal II – Poblacion Elementary School<br>Contact: 09190937804<br>Mr. Dexter T. Sales<br>Administrative Officer II – Poblacion Elementary School<br>Contact: 09175037019"
+                ],
+                learned: [
+                    "This project significantly helped me grow as a full-stack web developer and introduced me to the field of QA testing. Through manual and automated testing, I was able to find and fix bugs, improve input validation, and analyze system flaws. I also gained experience in basic cybersecurity practices, particularly in securing local systems. Despite the technical challenges and limited time, the system was successfully delivered and is now in use. I am proud to say that I left a real-world contribution to the school while developing both my technical and problem-solving skills.<br>In the future, I plan to improve this system by adding Role-Based Access Control (RBAC) for better security, improving its responsive design, and upgrading its UI/UX for a more user-friendly experience."
                 ]
             },
             project2: {
-                title: "E-commerce Website with Cypress Tests",
-                description: "Created a full-stack e-commerce website with comprehensive automated tests using Cypress for the frontend. The project included user authentication, product browsing, shopping cart functionality, and checkout process.",
+                title: "QA Manual and Automation Testing for Poblacion Elementary School Portal",
+                description: "This QA project was part of my On-the-Job Training (OJT) from February 19, 2025, to June 16, 2025, completing a total of 486 hours. Aside from developing the Poblacion Elementary School Portal System, I also performed Manual and Automation QA testing. I created and executed test cases, bug reports, and test data using Excel, ensuring that the system was validated before deployment. In addition, I developed Cypress automation scripts for end-to-end testing of the Student Registration and Data Management modules. The QA testing helped reduce bugs, resolve issues in both functionality and UI, and allowed me to gain valuable knowledge in QA Manual and Automation practices.",
                 challenges: [
-                    "Implementing end-to-end testing for complex user flows",
-                    "Testing asynchronous operations like API calls and state updates",
-                    "Managing test data for different test scenarios",
-                    "Ensuring cross-browser compatibility"
+                    "I was the sole developer and tester of the project, handling both development and QA tasks.",
+                    "Limited time during the OJT period, which made balancing development and testing difficult.",
+                    "I was still learning automation testing and proper test case design while applying them in real time.",
                 ],
                 solutions: [
-                    "Created custom Cypress commands for common operations",
-                    "Implemented proper waiting strategies for asynchronous operations",
-                    "Used fixtures and database seeding for consistent test data",
-                    "Set up cross-browser testing with Cypress Dashboard"
+                    "Conducted QA testing before deployment to ensure fewer bugs and better functionality.",
+                    "Applied manual testing through detailed test cases, bug reports, and test data to improve reliability.",
+                    "Used Cypress automation scripts to validate critical flows in the Student Registration and Data Management modules.",
                 ],
-                technologies: ["React", "Node.js", "Express", "MongoDB", "Cypress", "JavaScript", "Tailwind CSS"],
+                technologies: ["VSCode","Cypress", "Excel", "Jira", "Chrome", "Firefox", "Browser DevTools"],
                 results: [
-                    "Developed a fully functional e-commerce platform with 90% test coverage",
-                    "Implemented CI/CD pipeline with GitHub Actions for continuous testing",
-                    "Created 50+ automated test cases covering critical user journeys",
-                    "Received positive feedback from course instructor and peers"
-                ]
-            },
-            project3: {
-                title: "API Testing Framework",
-                description: "Designed and implemented an API testing framework using Postman and Newman for a RESTful service. The framework enabled comprehensive testing of API endpoints, request/response validation, and integration testing.",
-                challenges: [
-                    "Testing complex API dependencies and workflows",
-                    "Validating dynamic response schemas",
-                    "Managing test data and environment variables",
-                    "Integrating API tests into CI/CD pipeline"
+                    "The system was delivered with fewer bugs and improved functionality due to QA testing.",
+                    "UI issues and system flaws were identified and resolved before deployment.",
+                    "QA practices supported the overall success of the system implementation.",
                 ],
-                solutions: [
-                    "Created modular test collections for different API functionalities",
-                    "Implemented JSON Schema validation for response verification",
-                    "Used environment variables for different testing environments",
-                    "Set up Newman for command-line execution and CI integration"
+                additionals: [
+                    "Timeline: February 19, 2025 – June 16, 2025",
+                    "Location: Poblacion Elementary School",
+                    "System Type: QA Testing for Local Web-Based School Portal",
+                    "Modules Tested: Student Registration and Data Management",
+                    "Testing Tools: Excel (Manual Test Case Documentation), Cypress (Automation)",
+                    "Reference:<br>Mrs. Maria Reishelle Dueñas<br>Principal II – Poblacion Elementary School<br>Contact: 09190937804<br>Mr. Dexter T. Sales<br>Administrative Officer II – Poblacion Elementary School<br>Contact: 09175037019"
                 ],
-                technologies: ["Postman", "Newman", "JavaScript", "Jenkins", "JSON Schema", "GitHub Actions"],
-                results: [
-                    "Achieved 95% test coverage for all API endpoints",
-                    "Reduced API testing time by 70%",
-                    "Identified and fixed 15 API issues during development",
-                    "Successfully integrated API tests into the CI/CD pipeline"
-                ]
-            },
-            project4: {
-                title: "Student Collaboration App Testing",
-                description: "Conducted manual and automated testing for a student collaboration mobile application using Appium. The app allowed students to form study groups, share resources, and schedule study sessions.",
-                challenges: [
-                    "Testing on both Android and iOS platforms",
-                    "Handling different device sizes and orientations",
-                    "Testing push notifications and real-time features",
-                    "Managing test environments for mobile testing"
-                ],
-                solutions: [
-                    "Implemented a cross-platform test framework using Appium",
-                    "Created responsive tests that work across different screen sizes",
-                    "Set up mock servers for testing notifications and real-time features",
-                    "Used BrowserStack for testing on multiple real devices"
-                ],
-                technologies: ["Appium", "Java", "TestNG", "Android", "iOS", "BrowserStack", "Maven"],
-                results: [
-                    "Developed 30+ automated test cases for critical app functions",
-                    "Identified and reported 25 bugs during testing",
-                    "Improved app stability and user experience",
-                    "Received recognition from the development team for quality contributions"
-                ]
-            },
-            project5: {
-                title: "Test Case Management System",
-                description: "Developed a web-based test case management system for organizing and tracking test cases and results. The system allowed testers to create, organize, and execute test cases, and generate reports on test coverage and results.",
-                challenges: [
-                    "Designing an intuitive user interface for test management",
-                    "Implementing a flexible test case organization system",
-                    "Creating comprehensive reporting features",
-                    "Ensuring data persistence and reliability"
-                ],
-                solutions: [
-                    "Used React for building a responsive and interactive UI",
-                    "Implemented a hierarchical structure for test organization",
-                    "Created customizable dashboards and reports",
-                    "Used MongoDB for flexible data storage and retrieval"
-                ],
-                technologies: ["React", "Node.js", "Express", "MongoDB", "Chart.js", "Tailwind CSS", "JWT Authentication"],
-                results: [
-                    "Created a fully functional test management system",
-                    "Implemented features for test case creation, execution, and reporting",
-                    "Developed user authentication and role-based access control",
-                    "Used the system for managing test cases in other academic projects"
-                ]
-            },
-            project6: {
-                title: "Security Testing Project",
-                description: "Implemented basic security testing for a web application to identify common vulnerabilities. The project focused on detecting OWASP Top 10 vulnerabilities and implementing security best practices.",
-                challenges: [
-                    "Understanding different types of security vulnerabilities",
-                    "Setting up automated security scanning tools",
-                    "Interpreting and validating scan results",
-                    "Recommending appropriate security fixes"
-                ],
-                solutions: [
-                    "Used OWASP ZAP for automated security scanning",
-                    "Created Python scripts to automate scanning processes",
-                    "Implemented manual verification of potential vulnerabilities",
-                    "Documented findings and recommended security improvements"
-                ],
-                technologies: ["OWASP ZAP", "Python", "Selenium", "Jenkins", "HTML/CSS", "JavaScript"],
-                results: [
-                    "Identified 10+ security vulnerabilities in the target application",
-                    "Created a comprehensive security testing report",
-                    "Implemented fixes for critical security issues",
-                    "Developed a security testing checklist for future projects"
+                learned: [
+                    "Through this project, I gained hands-on experience in both manual and automated QA testing. I created and executed test cases for the student registration and data management modules, documented issues through bug reports, and validated fixes to ensure system reliability. By using Cypress for automation, I learned how to implement end-to-end testing that improved testing efficiency and accuracy. I also became more familiar with QA documentation practices, which can be managed through tools like Jira. Overall, this project taught me the importance of thorough testing in delivering a stable system and strengthened my skills in identifying issues, analyzing system performance, and ensuring quality before deployment."
                 ]
             }
         };
@@ -265,14 +192,17 @@
                                 ${project.results.map(result => `<li>${result}</li>`).join('')}
                             </ul>
                         </div>
-                        
-                        <div class="flex flex-col sm:flex-row gap-4 pt-4 border-t border-gray-200 dark:border-gray-600">
-                            <a href="https://github.com/johndoe/${projectId}" target="_blank" class="flex-1 bg-gray-800 dark:bg-gray-700 text-white py-2 px-4 rounded-lg hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-300 text-center">
-                                <i class="fab fa-github mr-2"></i>View on GitHub
-                            </a>
-                            <a href="https://demo-${projectId}.example.com" target="_blank" class="flex-1 bg-green-600 dark:bg-green-700 text-white py-2 px-4 rounded-lg hover:bg-green-700 dark:hover:bg-green-600 transition-colors duration-300 text-center">
-                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
-                            </a>
+
+                        <div>
+                            <h4 class="text-lg font-semibold mb-2">Project Details</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-300">
+                                ${project.additionals.map(additional => `<li>${additional}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-semibold mb-2">What I Learned</h4>
+                            <p class="text-gray-700 dark:text-gray-300">${project.learned}</p>
                         </div>
                     </div>
                 `;
@@ -307,41 +237,6 @@
                 document.body.style.overflow = 'auto';
             }, 300);
         }
-        
-        // Contact Form Submission
-        const contactForm = document.getElementById('contact-form');
-        const formMessage = document.getElementById('form-message');
-        
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Simple validation
-            if (!name || !email || !subject || !message) {
-                formMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'dark:bg-green-900', 'dark:text-green-200');
-                formMessage.classList.add('bg-red-100', 'text-red-800', 'dark:bg-red-900', 'dark:text-red-200');
-                formMessage.textContent = 'Please fill in all fields.';
-                return;
-            }
-            
-            // Simulate form submission (in a real application, this would send data to a server)
-            formMessage.classList.remove('hidden', 'bg-red-100', 'text-red-800', 'dark:bg-red-900', 'dark:text-red-200');
-            formMessage.classList.add('bg-green-100', 'text-green-800', 'dark:bg-green-900', 'dark:text-green-200');
-            formMessage.textContent = 'Thank you! Your message has been sent successfully.';
-            
-            // Reset form
-            contactForm.reset();
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                formMessage.classList.add('hidden');
-            }, 5000);
-        });
         
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');

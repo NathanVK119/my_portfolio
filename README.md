@@ -40,5 +40,3 @@ A simple structure for a clean and straightforward portfolio.
 ## 💡 Fun Fact
 
 Even before diving into QA Automation, I was already very meticulous with bug checking as a developer. My perfectionist eyes for visual issues, responsiveness, and functionality made me realize that I naturally fit into the QA world — and now, I'm building automation skills using Cypress while combining my dev background and passion for clean systems.
-
-

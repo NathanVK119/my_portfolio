@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Web-Based School Portal for Poblacion Elementary School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white min-h-screen">
+    <!-- Fixed Back Button -->
+    <div class="fixed top-6 left-6 z-50">
+        <button class="back-button flex items-center space-x-3 text-white hover:text-blue-300 font-medium glass-card px-6 py-3 rounded-full">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span><a href="../index.html#projects">Back</a></span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="w-full px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header Section -->
+            <header class="text-center mb-20 fade-in">
+                <div class="flex justify-center mb-8">
+                    <div class="floating-icon bg-gradient-to-r from-green-500 to-blue-600 p-6 rounded-2xl shadow-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold gradient-text mb-6 leading-tight">
+                    School Portal
+                </h1>
+                <p class="text-2xl sm:text-3xl text-blue-200 font-light mb-8 max-w-3xl mx-auto">
+                    Local Web-Based School Portal for Poblacion Elementary School
+                </p>
+                
+                <!-- Tech Stack Badges -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12 fade-in-delayed">
+                    <span class="tech-badge px-4 py-2 rounded-full text-sm font-semibold text-white">HTML</span>
+                    <span class="tech-badge px-4 py-2 rounded-full text-sm font-semibold text-white">CSS</span>
+                    <span class="tech-badge px-4 py-2 rounded-full text-sm font-semibold text-white">Bootstrap</span>
+                    <span class="tech-badge px-4 py-2 rounded-full text-sm font-semibold text-white">JavaScript</span>
+                    <span class="tech-badge px-4 py-2 rounded-full text-sm font-semibold text-white">PHP</span>
+                    <span class="tech-badge px-4 py-2 rounded-full text-sm font-semibold text-white">MySQL</span>
+                    <span class="tech-badge px-4 py-2 rounded-full text-sm font-semibold text-white">Cypress</span>
+                </div>
+                
+                <!-- Project Description -->
+                <div class="glass-card rounded-3xl p-8 sm:p-12 text-left max-w-4xl mx-auto fade-in-delayed">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-500 p-2 rounded-lg">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-200 mb-3">🖥️ System Demo: Local School Portal</h3>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                This is a local-only web-based portal developed for Poblacion Elementary School. It features two core modules: Student Registration and Data Management for teachers. The system runs within the local area network using XAMPP and is accessible from multiple devices without internet connection.
+                                Below is a step-by-step walkthrough of how the system works.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Screenshots Section -->
+            <section class="space-y-20">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold gradient-text mb-4">🖥️ System Demo</h2>
+                    <p class="text-xl text-blue-200">Step-by-step System Workflow</p>
+                </div>
+                
+                <!-- Screenshot 1 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/home_page_s1.jpg" 
+                             alt="Hoome Page" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-orange-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 1: Homepage
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-orange-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Home Page</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            The homepage displays the two main modules of the system: Student Registration and Data Management. These modules serve as the entry points for managing student information and organizing school files efficiently.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 2 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/student_reg_login_s2.jpg" 
+                             alt="Student Registration Login" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 2: Student Registration Login
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Student Registration Login</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This is the login page for the Student Registration Module, where the user must log in to access and manage student information.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 3 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/sr_dashboard_s3.jpg" 
+                             alt="Student Registration Dashboard" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 3: Student Registration Dashboard
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Student Registration Dashboard</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This dashboard displays key student data, including the total number of students, male and female count, grade level distribution, and enrollment status. It also provides quick action buttons for registering new students and searching existing records.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 4 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/sr_register_s4.jpg" 
+                             alt="Student Registration Interface" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 4: Student Registration Interface
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Student Registration</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This interface displays the form used to register a new student. It includes fields for entering personal information such as full name, gender, section, year level, and other relevant details necessary for student profiling.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 5 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/sr_records_s5.jpg" 
+                             alt="Student Registration Records" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 5: Student Records
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Student Records</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This section displays the list of all registered students. It features a search bar for quick filtering and action buttons for viewing, editing/updating, or deleting student records.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 6 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/sr_viewrec_s6.jpg" 
+                             alt="Student Registration View Records" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 6: View Records
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">View Records</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step shows the complete details of an individual student. It includes a print button that allows easy generation of a hard copy for documentation or filing purposes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 7 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/sr_search_s7.jpg" 
+                             alt="Student Registration Search Records" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 7: Search Records
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Search Records</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This feature showcases the system’s advanced search functionality. Users can perform specific searches using filters such as student name, section, school year, status, and gender. It also supports broader searches, like viewing all students under a particular section.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 8 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/sr_group_search_s8.jpg" 
+                             alt="Student Registration Group Search Records" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 8: Group Search Records
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Group Search Records</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step demonstrates the group filtering capability of the system. Users can efficiently search for multiple students based on selected criteria such as grade level, school year, and gender. This step also highlights the "Export to Excel" feature, which allows users to download and use student data directly in Excel for reporting and documentation purposes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 9 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/sr_export_s9.jpg" 
+                             alt="Student Registration Export to Excel" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-green-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 9: Export to Excel
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-green-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Export to Excel</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step shows how filtered group records from the previous search can be exported directly to an Excel file. This feature is especially useful for teachers, as it allows them to keep organized records, generate reports, and manage student data efficiently outside the system.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 10 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/data_management_login_s10.jpg" 
+                             alt="Data Management Login" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-blue-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 10: Data Management Login
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-blue-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Data Management Login</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step displays the login interface for the Data Management module. It is designed for teachers, allowing them to securely access the system where they can upload and retrieve important files efficiently.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 11 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/dm_interface_s11.jpg" 
+                             alt="Data Management Interface" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-blue-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 11: Data Management Interface
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-blue-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Data Management Interface</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This interface provides teachers with a file management system similar to Google Drive. Users can upload files, create folders, view or download documents for easy retrieval, and use the search feature to quickly find specific files or folders.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 12 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/dm_create_folder_s12.jpg" 
+                             alt="Data Management Create Folder" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-blue-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 12: Create Folder
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-blue-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Create Folder</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step demonstrates how teachers can create new folders within the Data Management system to organize files efficiently.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 13 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/dm_search_folder_s13.jpg" 
+                             alt="Data Management Search Folder" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-blue-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 13: Search Folder
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-blue-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Search Folder</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step shows how users can quickly search for folders within the Data Management system, making file organization and retrieval faster and easier.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 14 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/dm_upload_file_s14.jpg" 
+                             alt="Data Management Upload File" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-blue-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 14: Upload File
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-blue-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Upload File</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step demonstrates the file upload feature, where users can upload various files. Once uploaded, users have the option to view (if it's an image) or download the file using dedicated buttons for easy access and retrieval.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 15 -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                        <img src="../images/dm_viewdownload_s15.jpg" 
+                             alt="Data Management View/Download File" 
+                             class="w-full h-full object-contain opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                        <div class="absolute top-6 right-6 bg-blue-500 px-3 py-1 rounded-full text-sm font-semibold">
+                            Step 15: View/Download File
+                        </div>
+                    </div>
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-blue-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">View/Download File</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            This step shows the functionality to view images directly through a view button and download any file type for retrieval. This feature allows teachers and staff to access important documents quickly and efficiently.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="screenshot-container glass-card rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="p-8 sm:p-10">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-orange-500 p-2 rounded-lg">
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Summary</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            In summary, this system was developed to simplify and improve the management of student records and school files through two main modules: Student Registration and Data Management. It provides a more organized, faster, and user-friendly way for teachers and staff to handle essential school data. With features like quick search, export to Excel, and secure file storage, the system aims to reduce manual work and promote efficient, digital record-keeping in the school. Although simple in its functions, this project stands as my legacy as an OJT/Intern before graduating with a BSIT degree, and it has already made a positive impact at Poblacion Elementary School, where it is currently in use. Through this project, I also gained valuable real-world experience in web development, networking, and both manual and automation testing in QA, which further enhanced my technical skills and prepared me for my future career in the IT industry.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <button class="back-to-top glass-card p-4 rounded-full text-white hover:text-blue-300 shadow-2xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
